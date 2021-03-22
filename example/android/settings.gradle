@@ -1,0 +1,6 @@
+rootProject.name = 'PocAndroidExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativepocandroid'
+project(':reactnativepocandroid').projectDir = new File(rootProject.projectDir, '../../android')
